@@ -18,7 +18,7 @@ function App() {
     <div className='flex flex-col min-h-screen'>
       <NavBar />
       <ItemListContainer mensaje={'ACÁ SE VA A RENDERIZAR EL LISTADO INICIAL DE LA GRILLA DE ITEMS'} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
