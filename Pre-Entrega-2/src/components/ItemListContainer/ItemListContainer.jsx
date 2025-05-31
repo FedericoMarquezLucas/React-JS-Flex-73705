@@ -1,6 +1,6 @@
 import Item from '../Item/Item.jsx'
-import getProducts from '../../services/mockService';
-import { useState, useEffect } from 'react';
+import getProducts from '../../services/mockService'
+import { useState, useEffect } from 'react'
 
 function ItemListContainer(props) {
 

@@ -1,6 +1,6 @@
 const RatingStars = ({ rating }) => {
-  const totalStars = 5;
-  const filledStars = Math.round(rating);
+  const totalStars = 5
+  const filledStars = Math.round(rating)
 
   return (
     <div className="flex flex-row items-center text-yellow-400">
@@ -30,7 +30,7 @@ const RatingStars = ({ rating }) => {
         </svg>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default RatingStars;
+export default RatingStars

@@ -1,4 +1,4 @@
-import RatingStars from '../RatingStars/RatingStars.jsx';
+import RatingStars from '../RatingStars/RatingStars.jsx'
 
 function Item(props) {
   return (

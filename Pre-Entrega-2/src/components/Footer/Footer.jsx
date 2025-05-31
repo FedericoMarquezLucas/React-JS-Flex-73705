@@ -4,7 +4,7 @@ function Footer() {
       <footer className="bg-slate-900 rounded-lg shadow mx-4 mb-4">
         <div className="w-full mx-auto max-w-screen-xl p-4 flex items-center flex-col gap-3 md:flex-row md:justify-between lg:px-8">
           <span className="text-xs sm:text-sm text-white sm:text-center">
-              Federico Márquez Lucas | Pre-Entrega #1 | React JS Flex - 73705
+              Federico Márquez Lucas | Pre-Entrega #2 | React JS Flex - 73705
           </span>
           <a href="https://www.coderhouse.com/uy/cursos/reactjs" target="_blank">
             <svg className="w-auto h-[15px]" xmlns="http://www.w3.org/2000/svg" width="121" height="26" viewBox="0 0 121 26" fill="none">
