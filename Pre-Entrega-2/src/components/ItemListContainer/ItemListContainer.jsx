@@ -2,10 +2,6 @@ import Item from '../Item/Item.jsx'
 import getProducts from '../../services/mockService';
 import { useState, useEffect } from 'react';
 
-const products = [
-  "Hola", "React", "Coder", "Otra Cosa"
-]
-
 function ItemListContainer(props) {
 
   const [products, setProducts] = useState([])

@@ -1,5 +1,5 @@
 const products = [
-        {
+    {
         id: 1,
         marca: "Harley Davidson",
         modelo: "Softail Deluxe FLSTN",
@@ -997,7 +997,7 @@ function getProducts() {
     return new Promise( (resolve, reject) => {
         setTimeout( () => {
             resolve(products)
-        }, 10000)
+        }, 1000)
     })
 }
 
