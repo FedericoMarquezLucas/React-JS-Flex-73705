@@ -10,7 +10,6 @@ function WishlistWidget() {
 					</button>
 				</div>
 				<div
-					x-cloak
 					x-show="openWishlist"
 					className="absolute top-[55px] right-0 z-10 flex w-screen max-w-max"
 				>

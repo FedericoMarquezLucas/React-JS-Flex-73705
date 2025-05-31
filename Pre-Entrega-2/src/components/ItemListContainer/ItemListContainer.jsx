@@ -1,17 +1,38 @@
 import Item from '../Item/Item.jsx'
+import getProducts from '../../services/mockService';
+import { useState, useEffect } from 'react';
 
 const products = [
   "Hola", "React", "Coder", "Otra Cosa"
 ]
 
 function ItemListContainer(props) {
+
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    getProducts()
+    .then(result => {
+      setProducts(result)
+    }).catch((err) => { alert(err) })
+  }, [])
+
   return (
     <>
       <div className="bg-white pt-[79px] flex-grow">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:pt-0 lg:px-8">
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 lg:gap-x-8'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 lg:gap-x-8 [&:has(>_:only-child)]:grid-cols-1 [&:has(>_:only-child)]:justify-items-center'>
             {
-              products.map( (elem, index) => <Item key={elem} number={index+1} name={elem}/> )
+              products.length > 0
+                ?
+                  products.map(item => <Item key={item.id} {...item}/>)
+                :
+                <div className='flex items-center justify-center gap-2 bg-red-50 p-4 rounded-lg text-sm text-red-700 text-center'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                    <path fill-rule="evenodd" d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd"></path>
+                  </svg>
+                  No se encontraron productos
+                </div>
             }
           </div>
         </div>
