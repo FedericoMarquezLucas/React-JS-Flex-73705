@@ -11,13 +11,13 @@ function Item(props) {
         </h3>
         <div className="flex flex-row items-center gap-2.5">
             <h5 className="mt-0 text-xs text-gray-500">
-                {props.anio} | {props.cilindrada}ci | {props.kilometraje}kms.
+                {props.anio} | {props.cilindrada}ci | {props.kilometraje.toLocaleString('en-US')}{props.kilometraje > 0 ? 'kms.' : 'km.'}
             </h5>
             <RatingStars rating={props.rating} />
         </div>
         <div className="flex items-center justify-between mt-2.5">
             <p className="text-lg font-semibold text-gray-900">
-                USD {props.precio}
+                {props.precio.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).replace('$', '$ ')}
             </p>
             <div className="flex items-center gap-3.5">
                 <button type="button" className="text-xs hover:underline font-semibold text-gray-500 sm:mt-0 sm:w-auto" title="Add to Wishlist">Add to Wishlist</button>
