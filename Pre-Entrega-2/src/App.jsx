@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import NavBar from './components/NavBar/NavBar.jsx'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
@@ -17,7 +18,10 @@ function App() {
   return (
     <div className='flex flex-col min-h-screen'>
       <NavBar />
-      <ItemListContainer />
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/motos" element={<ItemListContainer />} />
+      </Routes>
       <Footer />
     </div>
   )
