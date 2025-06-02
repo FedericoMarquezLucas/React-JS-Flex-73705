@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <footer className="bg-slate-900 rounded-lg shadow mx-4 mb-4">
+      <footer className="relative bg-slate-900 rounded-lg shadow mx-4 mb-4">
         <div className="w-full mx-auto max-w-screen-xl p-4 flex items-center flex-col gap-3 md:flex-row md:justify-between lg:px-8">
           <span className="text-xs sm:text-sm text-white sm:text-center">
               Federico Márquez Lucas | Pre-Entrega #2 | React JS Flex - 73705

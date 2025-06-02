@@ -12,8 +12,8 @@ const products = [
         kilometraje: 55000,
         precio: 29900,
         rating: 1,
-        imagen: "/product/img_softail_deluxe_flstn.jpg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_softail_deluxe_flstn.jpg",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 2,
@@ -28,8 +28,8 @@ const products = [
         kilometraje: 20000,
         precio: 19900,
         rating: 5,
-        imagen: "/product/img_sportster_forty_eight.png",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_sportster_forty_eight.png",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 3,
@@ -44,8 +44,8 @@ const products = [
         kilometraje: 0,
         precio: 40900,
         rating: 4,
-        imagen: "/product/img_multistrada_v4.png",
-        logo: "/logo/logo_ducati.png"
+        imagen: "/Product/img_multistrada_v4.png",
+        logo: "/Logo/logo_ducati.png"
     },
     {
         id: 4,
@@ -60,8 +60,8 @@ const products = [
         kilometraje: 25000,
         precio: 16000,
         rating: 4,
-        imagen: "/product/img_1190_adventure_r.jpeg",
-        logo: "/logo/logo_ktm.png"
+        imagen: "/Product/img_1190_adventure_r.jpeg",
+        logo: "/Logo/logo_ktm.png"
     },
     {
         id: 5,
@@ -76,8 +76,8 @@ const products = [
         kilometraje: 0,
         precio: 34990,
         rating: 2,
-        imagen: "/product/img_zx10r.png",
-        logo: "/logo/logo_kawasaki.svg"
+        imagen: "/Product/img_zx10r.png",
+        logo: "/Logo/logo_kawasaki.svg"
     },
     {
         id: 6,
@@ -92,8 +92,8 @@ const products = [
         kilometraje: 2500,
         precio: 10900,
         rating: 1,
-        imagen: "/product/img_svartpilen_701.jpeg",
-        logo: "/logo/logo_husqvarna.png"
+        imagen: "/Product/img_svartpilen_701.jpeg",
+        logo: "/Logo/logo_husqvarna.png"
     },
     {
         id: 7,
@@ -108,8 +108,8 @@ const products = [
         kilometraje: 0,
         precio: 79990,
         rating: 4,
-        imagen: "/product/img_m1000r.jpeg",
-        logo: "/logo/logo_bmw.png"
+        imagen: "/Product/img_m1000r.jpeg",
+        logo: "/Logo/logo_bmw.png"
     },
     {
         id: 8,
@@ -124,8 +124,8 @@ const products = [
         kilometraje: 0,
         precio: 18900,
         rating: 5,
-        imagen: "/product/img_mt09.avif",
-        logo: "/logo/logo_yamaha.png"
+        imagen: "/Product/img_mt09.avif",
+        logo: "/Logo/logo_yamaha.png"
     },
     {
         id: 9,
@@ -140,8 +140,8 @@ const products = [
         kilometraje: 0,
         precio: 38900,
         rating: 5,
-        imagen: "/product/img_scrambler1200x.avif",
-        logo: "/logo/logo_triumph.svg"
+        imagen: "/Product/img_scrambler1200x.avif",
+        logo: "/Logo/logo_triumph.svg"
     },
     {
         id: 10,
@@ -156,8 +156,8 @@ const products = [
         kilometraje: 0,
         precio: 69900,
         rating: 2,
-        imagen: "/product/img_road_glide_cvo.webp",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_road_glide_cvo.webp",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 11,
@@ -172,8 +172,8 @@ const products = [
         kilometraje: 0,
         precio: 39900,
         rating: 4,
-        imagen: "/product/img_sportster_s.jpeg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_sportster_s.jpeg",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 12,
@@ -188,8 +188,8 @@ const products = [
         kilometraje: 5850,
         precio: 14900,
         rating: 2,
-        imagen: "/product/img_hypermotard_950_sp.jpeg",
-        logo: "/logo/logo_ducati.png"
+        imagen: "/Product/img_hypermotard_950_sp.jpeg",
+        logo: "/Logo/logo_ducati.png"
     },
     {
         id: 13,
@@ -204,8 +204,8 @@ const products = [
         kilometraje: 10000,
         precio: 18900,
         rating: 3,
-        imagen: "/product/img_scrambler_1100_tribute.jpeg",
-        logo: "/logo/logo_ducati.png"
+        imagen: "/Product/img_scrambler_1100_tribute.jpeg",
+        logo: "/Logo/logo_ducati.png"
     },
     {
         id: 14,
@@ -220,8 +220,8 @@ const products = [
         kilometraje: 0,
         precio: 49900,
         rating: 3,
-        imagen: "/product/img_chief_classic.jpeg",
-        logo: "/logo/logo_indian.svg"
+        imagen: "/Product/img_chief_classic.jpeg",
+        logo: "/Logo/logo_indian.svg"
     },
     {
         id: 15,
@@ -236,8 +236,8 @@ const products = [
         kilometraje: 0,
         precio: 10850,
         rating: 5,
-        imagen: "/product/img_yz125.webp",
-        logo: "/logo/logo_yamaha.png"
+        imagen: "/Product/img_yz125.webp",
+        logo: "/Logo/logo_yamaha.png"
     },
     {
         id: 16,
@@ -252,8 +252,8 @@ const products = [
         kilometraje: 5000,
         precio: 15990,
         rating: 1,
-        imagen: "/product/img_norden_901.jpeg",
-        logo: "/logo/logo_husqvarna.png"
+        imagen: "/Product/img_norden_901.jpeg",
+        logo: "/Logo/logo_husqvarna.png"
     },
     {
         id: 17,
@@ -268,8 +268,8 @@ const products = [
         kilometraje: 0,
         precio: 10990,
         rating: 4,
-        imagen: "/product/img_enduro_701.webp",
-        logo: "/logo/logo_husqvarna.png"
+        imagen: "/Product/img_enduro_701.webp",
+        logo: "/Logo/logo_husqvarna.png"
     },
     {
         id: 18,
@@ -284,8 +284,8 @@ const products = [
         kilometraje: 8500,
         precio: 6900,
         rating: 4,
-        imagen: "/product/img_viptilen_401.avif",
-        logo: "/logo/logo_husqvarna.png"
+        imagen: "/Product/img_viptilen_401.avif",
+        logo: "/Logo/logo_husqvarna.png"
     },
     {
         id: 19,
@@ -300,8 +300,8 @@ const products = [
         kilometraje: 500,
         precio: 20900,
         rating: 5,
-        imagen: "/product/img_xsr900.avif",
-        logo: "/logo/logo_yamaha.png"
+        imagen: "/Product/img_xsr900.avif",
+        logo: "/Logo/logo_yamaha.png"
     },
     {
         id: 20,
@@ -316,8 +316,8 @@ const products = [
         kilometraje: 25000,
         precio: 1090,
         rating: 5,
-        imagen: "/product/img_jog.webp",
-        logo: "/logo/logo_yamaha.png"
+        imagen: "/Product/img_jog.webp",
+        logo: "/Logo/logo_yamaha.png"
     },
     {
         id: 22,
@@ -332,8 +332,8 @@ const products = [
         kilometraje: 0,
         precio: 59900,
         rating: 2,
-        imagen: "/product/img_tri_glide_ultra.webp",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_tri_glide_ultra.webp",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 23,
@@ -348,8 +348,8 @@ const products = [
         kilometraje: 0,
         precio: 49900,
         rating: 4,
-        imagen: "/product/img_panigale_v4.webp",
-        logo: "/logo/logo_ducati.png"
+        imagen: "/Product/img_panigale_v4.webp",
+        logo: "/Logo/logo_ducati.png"
     },
     {
         id: 24,
@@ -364,8 +364,8 @@ const products = [
         kilometraje: 10000,
         precio: 27900,
         rating: 4,
-        imagen: "/product/img_desertx.webp",
-        logo: "/logo/logo_ducati.png"
+        imagen: "/Product/img_desertx.webp",
+        logo: "/Logo/logo_ducati.png"
     },
     {
         id: 25,
@@ -380,8 +380,8 @@ const products = [
         kilometraje: 25000,
         precio: 25900,
         rating: 5,
-        imagen: "/product/img_xdiavel.png",
-        logo: "/logo/logo_ducati.png"
+        imagen: "/Product/img_xdiavel.png",
+        logo: "/Logo/logo_ducati.png"
     },
     {
         id: 26,
@@ -396,8 +396,8 @@ const products = [
         kilometraje: 55000,
         precio: 20900,
         rating: 5,
-        imagen: "/product/img_fat_boy.jpeg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_fat_boy.jpeg",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 27,
@@ -412,8 +412,8 @@ const products = [
         kilometraje: 0,
         precio: 32900,
         rating: 5,
-        imagen: "/product/img_pan_america.png",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_pan_america.png",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 28,
@@ -428,8 +428,8 @@ const products = [
         kilometraje: 0,
         precio: 49900,
         rating: 5,
-        imagen: "/product/img_r1200_gs_adventure.jpeg",
-        logo: "/logo/logo_bmw.png"
+        imagen: "/Product/img_r1200_gs_adventure.jpeg",
+        logo: "/Logo/logo_bmw.png"
     },
     {
         id: 29,
@@ -444,8 +444,8 @@ const products = [
         kilometraje: 15000,
         precio: 29900,
         rating: 1,
-        imagen: "/product/img_s1000_rr.avif",
-        logo: "/logo/logo_bmw.png"
+        imagen: "/Product/img_s1000_rr.avif",
+        logo: "/Logo/logo_bmw.png"
     },
     {
         id: 30,
@@ -460,8 +460,8 @@ const products = [
         kilometraje: 0,
         precio: 19900,
         rating: 3,
-        imagen: "/product/img_ce_04.webp",
-        logo: "/logo/logo_bmw.png"
+        imagen: "/Product/img_ce_04.webp",
+        logo: "/Logo/logo_bmw.png"
     },
     {
         id: 31,
@@ -476,8 +476,8 @@ const products = [
         kilometraje: 0,
         precio: 17900,
         rating: 5,
-        imagen: "/product/img_fc_450.png",
-        logo: "/logo/logo_husqvarna.png"
+        imagen: "/Product/img_fc_450.png",
+        logo: "/Logo/logo_husqvarna.png"
     },
     {
         id: 32,
@@ -492,8 +492,8 @@ const products = [
         kilometraje: 15000,
         precio: 12900,
         rating: 4,
-        imagen: "/product/img_vitpilen_701.jpeg",
-        logo: "/logo/logo_husqvarna.png"
+        imagen: "/Product/img_vitpilen_701.jpeg",
+        logo: "/Logo/logo_husqvarna.png"
     },
     {
         id: 33,
@@ -508,8 +508,8 @@ const products = [
         kilometraje: 12500,
         precio: 18900,
         rating: 4,
-        imagen: "/product/img_z900_rs.png",
-        logo: "/logo/logo_kawasaki.svg"
+        imagen: "/Product/img_z900_rs.png",
+        logo: "/Logo/logo_kawasaki.svg"
     },
     {
         id: 34,
@@ -524,8 +524,8 @@ const products = [
         kilometraje: 1500,
         precio: 12900,
         rating: 3,
-        imagen: "/product/img_kx450.png",
-        logo: "/logo/logo_kawasaki.svg"
+        imagen: "/Product/img_kx450.png",
+        logo: "/Logo/logo_kawasaki.svg"
     },
     {
         id: 35,
@@ -540,8 +540,8 @@ const products = [
         kilometraje: 1500,
         precio: 10900,
         rating: 2,
-        imagen: "/product/img_zx6r.jpeg",
-        logo: "/logo/logo_kawasaki.svg"
+        imagen: "/Product/img_zx6r.jpeg",
+        logo: "/Logo/logo_kawasaki.svg"
     },
     {
         id: 36,
@@ -556,8 +556,8 @@ const products = [
         kilometraje: 0,
         precio: 40900,
         rating: 5,
-        imagen: "/product/img_1290_super_adventure_r.jpeg",
-        logo: "/logo/logo_ktm.png"
+        imagen: "/Product/img_1290_super_adventure_r.jpeg",
+        logo: "/Logo/logo_ktm.png"
     },
     {
         id: 37,
@@ -572,8 +572,8 @@ const products = [
         kilometraje: 0,
         precio: 30900,
         rating: 5,
-        imagen: "/product/img_1290_super_duke_r.png",
-        logo: "/logo/logo_ktm.png"
+        imagen: "/Product/img_1290_super_duke_r.png",
+        logo: "/Logo/logo_ktm.png"
     },
     {
         id: 38,
@@ -588,8 +588,8 @@ const products = [
         kilometraje: 0,
         precio: 50900,
         rating: 2,
-        imagen: "/product/img_challenger_elite.png",
-        logo: "/logo/logo_indian.svg"
+        imagen: "/Product/img_challenger_elite.png",
+        logo: "/Logo/logo_indian.svg"
     },
     {
         id: 39,
@@ -604,8 +604,8 @@ const products = [
         kilometraje: 0,
         precio: 35900,
         rating: 3,
-        imagen: "/product/img_ftr_rally.jpeg",
-        logo: "/logo/logo_indian.svg"
+        imagen: "/Product/img_ftr_rally.jpeg",
+        logo: "/Logo/logo_indian.svg"
     },
     {
         id: 40,
@@ -620,8 +620,8 @@ const products = [
         kilometraje: 16500,
         precio: 35900,
         rating: 3,
-        imagen: "/product/img_rocket_3_gt.png",
-        logo: "/logo/logo_triumph.svg"
+        imagen: "/Product/img_rocket_3_gt.png",
+        logo: "/Logo/logo_triumph.svg"
     },
     {
         id: 41,
@@ -636,8 +636,8 @@ const products = [
         kilometraje: 0,
         precio: 29900,
         rating: 4,
-        imagen: "/product/img_tiger_1200_rally_pro.avif",
-        logo: "/logo/logo_triumph.svg"
+        imagen: "/Product/img_tiger_1200_rally_pro.avif",
+        logo: "/Logo/logo_triumph.svg"
     },
     {
         id: 42,
@@ -652,8 +652,8 @@ const products = [
         kilometraje: 900,
         precio: 29900,
         rating: 4,
-        imagen: "/product/img_thruxton_rs.avif",
-        logo: "/logo/logo_triumph.svg"
+        imagen: "/Product/img_thruxton_rs.avif",
+        logo: "/Logo/logo_triumph.svg"
     },
     {
         id: 43,
@@ -668,8 +668,8 @@ const products = [
         kilometraje: 40000,
         precio: 12900,
         rating: 5,
-        imagen: "/product/img_monster_1100_evo.webp",
-        logo: "/logo/logo_ducati.png"
+        imagen: "/Product/img_monster_1100_evo.webp",
+        logo: "/Logo/logo_ducati.png"
     },
     {
         id: 44,
@@ -684,8 +684,8 @@ const products = [
         kilometraje: 8000,
         precio: 22900,
         rating: 4,
-        imagen: "/product/img_scout.jpeg",
-        logo: "/logo/logo_indian.svg"
+        imagen: "/Product/img_scout.jpeg",
+        logo: "/Logo/logo_indian.svg"
     },
     {
         id: 45,
@@ -700,8 +700,8 @@ const products = [
         kilometraje: 0,
         precio: 10900,
         rating: 4,
-        imagen: "/product/img_sx_125.png",
-        logo: "/logo/logo_ktm.png"
+        imagen: "/Product/img_sx_125.png",
+        logo: "/Logo/logo_ktm.png"
     },
     {
         id: 46,
@@ -716,8 +716,8 @@ const products = [
         kilometraje: 0,
         precio: 6900,
         rating: 2,
-        imagen: "/product/img_rc_200.png",
-        logo: "/logo/logo_ktm.png"
+        imagen: "/Product/img_rc_200.png",
+        logo: "/Logo/logo_ktm.png"
     },
     {
         id: 47,
@@ -732,8 +732,8 @@ const products = [
         kilometraje: 8500,
         precio: 26900,
         rating: 3,
-        imagen: "/product/img_bonneville_t120.webp",
-        logo: "/logo/logo_triumph.svg"
+        imagen: "/Product/img_bonneville_t120.webp",
+        logo: "/Logo/logo_triumph.svg"
     },
     {
         id: 48,
@@ -748,8 +748,8 @@ const products = [
         kilometraje: 50000,
         precio: 34900,
         rating: 1,
-        imagen: "/product/img_road_king_classic.jpeg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_road_king_classic.jpeg",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 49,
@@ -764,8 +764,8 @@ const products = [
         kilometraje: 7500,
         precio: 20900,
         rating: 2,
-        imagen: "/product/img_sportster_seventy_two.jpeg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_sportster_seventy_two.jpeg",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 50,
@@ -780,8 +780,8 @@ const products = [
         kilometraje: 7500,
         precio: 26900,
         rating: 1,
-        imagen: "/product/img_crf1000_africa_twin.jpeg",
-        logo: "/logo/logo_honda.svg"
+        imagen: "/Product/img_crf1000_africa_twin.jpeg",
+        logo: "/Logo/logo_honda.svg"
     },
     {
         id: 51,
@@ -796,8 +796,8 @@ const products = [
         kilometraje: 0,
         precio: 16900,
         rating: 3,
-        imagen: "/product/img_crf450.webp",
-        logo: "/logo/logo_honda.svg"
+        imagen: "/Product/img_crf450.webp",
+        logo: "/Logo/logo_honda.svg"
     },
     {
         id: 52,
@@ -812,8 +812,8 @@ const products = [
         kilometraje: 5500,
         precio: 17900,
         rating: 5,
-        imagen: "/product/img_cb650r.avif",
-        logo: "/logo/logo_honda.svg"
+        imagen: "/Product/img_cb650r.avif",
+        logo: "/Logo/logo_honda.svg"
     },
     {
         id: 53,
@@ -828,8 +828,8 @@ const products = [
         kilometraje: 50000,
         precio: 7500,
         rating: 4,
-        imagen: "/product/img_cbx750.webp",
-        logo: "/logo/logo_honda.svg"
+        imagen: "/Product/img_cbx750.webp",
+        logo: "/Logo/logo_honda.svg"
     },
     {
         id: 54,
@@ -844,8 +844,8 @@ const products = [
         kilometraje: 0,
         precio: 26900,
         rating: 4,
-        imagen: "/product/img_cbr1000rr.avif",
-        logo: "/logo/logo_honda.svg"
+        imagen: "/Product/img_cbr1000rr.avif",
+        logo: "/Logo/logo_honda.svg"
     },
     {
         id: 55,
@@ -860,8 +860,8 @@ const products = [
         kilometraje: 0,
         precio: 68900,
         rating: 2,
-        imagen: "/product/img_cvo_street_glide.png",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_cvo_street_glide.png",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 56,
@@ -876,8 +876,8 @@ const products = [
         kilometraje: 42500,
         precio: 14900,
         rating: 2,
-        imagen: "/product/img_sportster_iron_883.jpeg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_sportster_iron_883.jpeg",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 57,
@@ -892,8 +892,8 @@ const products = [
         kilometraje: 20500,
         precio: 34900,
         rating: 2,
-        imagen: "/product/img_ultra_classic.png",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_ultra_classic.png",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 58,
@@ -908,8 +908,8 @@ const products = [
         kilometraje: 25000,
         precio: 18900,
         rating: 5,
-        imagen: "/product/img_xl1200_sportster_roadster.jpeg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_xl1200_sportster_roadster.jpeg",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 59,
@@ -924,8 +924,8 @@ const products = [
         kilometraje: 5000,
         precio: 26900,
         rating: 2,
-        imagen: "/product/img_gold_wing.avif",
-        logo: "/logo/logo_honda.svg"
+        imagen: "/Product/img_gold_wing.avif",
+        logo: "/Logo/logo_honda.svg"
     },
     {
         id: 60,
@@ -940,8 +940,8 @@ const products = [
         kilometraje: 0,
         precio: 34900,
         rating: 4,
-        imagen: "/product/img_r_ninet.avif",
-        logo: "/logo/logo_bmw.png"
+        imagen: "/Product/img_r_ninet.avif",
+        logo: "/Logo/logo_bmw.png"
     },
     {
         id: 61,
@@ -956,8 +956,8 @@ const products = [
         kilometraje: 0,
         precio: 22900,
         rating: 3,
-        imagen: "/product/img_softail_street_bob.png",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_softail_street_bob.png",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 62,
@@ -972,8 +972,8 @@ const products = [
         kilometraje: 0,
         precio: 20900,
         rating: 4,
-        imagen: "/product/img_dyna_fat_bob.jpeg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_dyna_fat_bob.jpeg",
+        logo: "/Logo/logo_harley_davidson.svg"
     },
     {
         id: 63,
@@ -988,8 +988,8 @@ const products = [
         kilometraje: 0,
         precio: 21900,
         rating: 3,
-        imagen: "/product/img_softail_heritage_classic.jpeg",
-        logo: "/logo/logo_harley_davidson.svg"
+        imagen: "/Product/img_softail_heritage_classic.jpeg",
+        logo: "/Logo/logo_harley_davidson.svg"
     }
 ]
 
