@@ -995,10 +995,23 @@ const products = [
 
 function getProducts() {
     return new Promise( (resolve, reject) => {
-        setTimeout( () => {
+        setTimeout(() => {
             resolve(products)
         }, 1000)
     })
 }
 
-export default getProducts;
+// export function getProductById(id) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const product = products.find(product => product.id === id)
+//             if (product) {
+//                 resolve(product)
+//             } else {
+//                 reject(new Error(`Product with id ${id} not found`))
+//             }
+//         }, 1000)
+//     })
+// }
+
+export default getProducts

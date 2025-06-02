@@ -18,7 +18,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/motos" element={<ItemListContainer />} />
+        <Route path="/bikes" element={<ItemListContainer />} />
         <Route path="/product/:id" element={<Item />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

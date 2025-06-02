@@ -12,15 +12,9 @@ function NavBar() {
               <span className="text-sm md:text-lg text-gray-900 font-semibold">Federico Márquez Lucas</span>
             </Link>
             <ul className='hidden sm:flex gap-x-5 items-center'>
-              <li>
-                <Link to="/motos" className='text-sm text-gray-900 font-normal'>Motos</Link>
-              </li>
-              <li>
-                <Link to="/" className='text-sm text-gray-900 font-normal'>Contacto</Link>
-              </li>
-              <li>
-                <Link to="/" className='text-sm text-gray-900 font-normal'>FAQ</Link>
-              </li>
+              <li><Link to="/bikes" className='text-sm text-gray-900 font-normal'>Bikes</Link></li>
+              <li><Link to="/" className='text-sm text-gray-900 font-normal'>Contact</Link></li>
+              <li><Link to="/" className='text-sm text-gray-900 font-normal'>FAQ</Link></li>
             </ul>
           </div>
           <div className="flex flex-row items-center gap-x-3.5" x-data="{ openWishlist: false, openCartSlideOver: false }">
