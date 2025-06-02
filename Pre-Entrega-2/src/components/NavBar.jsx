@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import CartWidget from '../CartWidget/CartWidget.jsx'
-import WishlistWidget from '../WishlistWidget/WishlistWidget.jsx'
+import CartWidget from './CartWidget.jsx'
+import WishlistWidget from './WishlistWidget.jsx'
 
 function NavBar() {
   return (

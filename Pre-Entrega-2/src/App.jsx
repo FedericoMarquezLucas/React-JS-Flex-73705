@@ -2,13 +2,8 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import NavBar from './components/NavBar/NavBar.jsx'
-import Home from './components/Home/Home.jsx'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
-import Item from './components/Item/Item.jsx'
-import NotFound from './components/NotFound/NotFound.jsx'
-import Footer from './components/Footer/Footer.jsx'
 import Alpine from 'alpinejs'
+import { Footer, Home, Item, ItemListContainer, NavBar, NotFound } from './components'
 
 function App() {
   const [count, setCount] = useState(0)
