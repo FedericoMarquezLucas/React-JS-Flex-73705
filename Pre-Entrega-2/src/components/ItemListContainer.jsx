@@ -1,17 +1,34 @@
-import Item from './Item.jsx'
+import ItemCell from './ItemCell.jsx'
 import getProducts from '../services/mockService.js'
 import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
 function ItemListContainer(props) {
 
+  const [allProducts, setAllProducts] = useState([])
   const [products, setProducts] = useState([])
 
+  const { brand } = useParams()
+
+  const filterByBrand = (arrayProducts, category) => {
+    if (brand) {
+      setProducts(arrayProducts.filter(el => el.brand === brand))
+    } else {
+      setProducts(arrayProducts)
+    }
+  }
+
   useEffect(() => {
-    getProducts()
-    .then(result => {
-      setProducts(result)
-    }).catch((err) => { alert(err) })
-  }, [])
+    if (allProducts.length === 0) {
+      getProducts()
+        .then(result => {
+            setAllProducts(result)
+            filterByBrand(result, brand)
+          }).catch((err) => { alert(err) })
+    } else {
+        filterByBrand(allProducts, brand)
+    };
+}, [brand]);
 
   return (
     <>
@@ -21,7 +38,7 @@ function ItemListContainer(props) {
             {
               products.length > 0
                 ?
-                  products.map(item => <Item key={item.id} {...item}/>)
+                  products.map(item => <ItemCell key={item.id} {...item}/>)
                 :
                 <div className='flex items-center justify-center gap-2 bg-red-50 p-4 rounded-lg text-sm text-red-700 text-center'>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">

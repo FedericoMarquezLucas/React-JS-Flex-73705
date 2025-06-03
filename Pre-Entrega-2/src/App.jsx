@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Alpine from 'alpinejs'
-import { Footer, Home, Item, ItemListContainer, NavBar, NotFound } from './components'
+import { Footer, Home, ItemCell, ItemListContainer, NavBar, NotFound } from './components'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bikes" element={<ItemListContainer />} />
-        <Route path="/product/:id" element={<Item />} />
+        <Route path="/bikes/:brand" element={<ItemListContainer />} />
+        <Route path="/product/:id" element={<ItemCell />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

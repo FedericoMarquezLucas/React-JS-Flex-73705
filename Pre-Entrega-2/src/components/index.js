@@ -1,8 +1,8 @@
 import Footer from './Footer'
 import Home from './Home'
-import Item from './Item'
+import ItemCell from './ItemCell'
 import ItemListContainer from './ItemListContainer'
 import NavBar from './NavBar'
 import NotFound from './NotFound'
 
-export { Footer, Home, Item, ItemListContainer, NavBar, NotFound }
+export { Footer, Home, ItemCell, ItemListContainer, NavBar, NotFound }
