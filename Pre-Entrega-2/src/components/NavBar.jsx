@@ -16,13 +16,13 @@ function NavBar() {
               <span className="text-sm md:text-lg text-gray-900 font-semibold">Federico Márquez Lucas</span>
             </NavLink>
             <div className='hidden sm:flex gap-x-5 items-center'>
-              <NavLink
+              {/* <NavLink
                 to="/bikes"
                 title="Bikes"
                 className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
               >
                 Bikes
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to="/bikes/Harley Davidson"
                 className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
@@ -34,6 +34,36 @@ function NavBar() {
                 className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
               >
                 Ducati
+              </NavLink>
+              <NavLink
+                to="/bikes/KTM"
+                className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
+              >
+                KTM
+              </NavLink>
+              <NavLink
+                to="/bikes/Kawasaki"
+                className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
+              >
+                Kawasaki
+              </NavLink>
+              <NavLink
+                to="/bikes/Husqvarna"
+                className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
+              >
+                Husqvarna
+              </NavLink>
+              <NavLink
+                to="/bikes/Yamaha"
+                className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
+              >
+                Yamaha
+              </NavLink>
+              <NavLink
+                to="/bikes/Triumph"
+                className={({ isActive }) => `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`}
+              >
+                Triumph
               </NavLink>
               {/* <NavLink to="/" className='text-sm text-gray-900 font-normal'>Contact</NavLink>
               <NavLink to="/" className='text-sm text-gray-900 font-normal'>FAQ</NavLink> */}

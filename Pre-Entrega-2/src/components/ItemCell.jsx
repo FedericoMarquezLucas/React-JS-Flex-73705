@@ -1,12 +1,14 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import RatingStars from './RatingStars.jsx'
 
 function ItemCell(props) {
   return (
 		<div className="group">
-			<div className="cursor-pointer aspect-square relative flex items-center justify-center bg-white border aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg xl:aspect-h-8 xl:aspect-w-7">
-				<img src={props.image} alt="" className="w-full h-auto object-cover object-center px-4 group-hover:opacity-75" />
-			</div>
+			<Link to={`/bikes/bike/${props.id}`}>
+				<div className="cursor-pointer aspect-square relative flex items-center justify-center bg-white border aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg xl:aspect-h-8 xl:aspect-w-7">
+					<img src={props.image} alt="" className="w-full h-auto object-cover object-center px-4 group-hover:opacity-75" />
+				</div>
+			</Link>
 			<h3 className="mt-4 text-sm text-gray-700">
 				<span className="font-semibold">{props.brand}</span> | <span className="font-normal">{props.model}</span>
 			</h3>
