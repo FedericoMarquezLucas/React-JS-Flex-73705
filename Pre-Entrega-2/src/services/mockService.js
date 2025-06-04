@@ -12,6 +12,7 @@ const products = [
         kilometers: 55000,
         price: 29900,
         rating: 1,
+        stock: 10,
         image: "/Product/img_softail_deluxe_flstn.jpg",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -28,6 +29,7 @@ const products = [
         kilometers: 20000,
         price: 19900,
         rating: 5,
+        stock: 0,
         image: "/Product/img_sportster_forty_eight.png",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -44,6 +46,7 @@ const products = [
         kilometers: 0,
         price: 40900,
         rating: 4,
+        stock: 0,
         image: "/Product/img_multistrada_v4.png",
         logo: "/Logo/logo_ducati.png"
     },
@@ -60,6 +63,7 @@ const products = [
         kilometers: 25000,
         price: 16000,
         rating: 4,
+        stock: 8,
         image: "/Product/img_1190_adventure_r.jpeg",
         logo: "/Logo/logo_ktm.png"
     },
@@ -76,6 +80,7 @@ const products = [
         kilometers: 0,
         price: 34990,
         rating: 2,
+        stock: 3,
         image: "/Product/img_zx10r.png",
         logo: "/Logo/logo_kawasaki.svg"
     },
@@ -92,6 +97,7 @@ const products = [
         kilometers: 2500,
         price: 10900,
         rating: 1,
+        stock: 0,
         image: "/Product/img_svartpilen_701.jpeg",
         logo: "/Logo/logo_husqvarna.png"
     },
@@ -108,6 +114,7 @@ const products = [
         kilometers: 0,
         price: 79990,
         rating: 4,
+        stock: 0,
         image: "/Product/img_m1000r.jpeg",
         logo: "/Logo/logo_bmw.png"
     },
@@ -124,6 +131,7 @@ const products = [
         kilometers: 0,
         price: 18900,
         rating: 5,
+        stock: 10,
         image: "/Product/img_mt09.avif",
         logo: "/Logo/logo_yamaha.png"
     },
@@ -140,6 +148,7 @@ const products = [
         kilometers: 0,
         price: 38900,
         rating: 5,
+        stock: 10,
         image: "/Product/img_scrambler1200x.avif",
         logo: "/Logo/logo_triumph.svg"
     },
@@ -156,6 +165,7 @@ const products = [
         kilometers: 0,
         price: 69900,
         rating: 2,
+        stock: 13,
         image: "/Product/img_road_glide_cvo.webp",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -172,6 +182,7 @@ const products = [
         kilometers: 0,
         price: 39900,
         rating: 4,
+        stock: 5,
         image: "/Product/img_sportster_s.jpeg",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -188,6 +199,7 @@ const products = [
         kilometers: 5850,
         price: 14900,
         rating: 2,
+        stock: 7,
         image: "/Product/img_hypermotard_950_sp.jpeg",
         logo: "/Logo/logo_ducati.png"
     },
@@ -204,6 +216,7 @@ const products = [
         kilometers: 10000,
         price: 18900,
         rating: 3,
+        stock: 83,
         image: "/Product/img_scrambler_1100_tribute.jpeg",
         logo: "/Logo/logo_ducati.png"
     },
@@ -220,6 +233,7 @@ const products = [
         kilometers: 0,
         price: 49900,
         rating: 3,
+        stock: 10,
         image: "/Product/img_chief_classic.jpeg",
         logo: "/Logo/logo_indian.svg"
     },
@@ -236,6 +250,7 @@ const products = [
         kilometers: 0,
         price: 10850,
         rating: 5,
+        stock: 0,
         image: "/Product/img_yz125.webp",
         logo: "/Logo/logo_yamaha.png"
     },
@@ -252,6 +267,7 @@ const products = [
         kilometers: 5000,
         price: 15990,
         rating: 1,
+        stock: 0,
         image: "/Product/img_norden_901.jpeg",
         logo: "/Logo/logo_husqvarna.png"
     },
@@ -268,6 +284,7 @@ const products = [
         kilometers: 0,
         price: 10990,
         rating: 4,
+        stock: 1,
         image: "/Product/img_enduro_701.webp",
         logo: "/Logo/logo_husqvarna.png"
     },
@@ -284,6 +301,7 @@ const products = [
         kilometers: 8500,
         price: 6900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_viptilen_401.avif",
         logo: "/Logo/logo_husqvarna.png"
     },
@@ -300,6 +318,7 @@ const products = [
         kilometers: 500,
         price: 20900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_xsr900.avif",
         logo: "/Logo/logo_yamaha.png"
     },
@@ -316,6 +335,7 @@ const products = [
         kilometers: 25000,
         price: 1090,
         rating: 5,
+        stock: 1,
         image: "/Product/img_jog.webp",
         logo: "/Logo/logo_yamaha.png"
     },
@@ -332,6 +352,7 @@ const products = [
         kilometers: 0,
         price: 59900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_tri_glide_ultra.webp",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -348,6 +369,7 @@ const products = [
         kilometers: 0,
         price: 49900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_panigale_v4.webp",
         logo: "/Logo/logo_ducati.png"
     },
@@ -364,6 +386,7 @@ const products = [
         kilometers: 10000,
         price: 27900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_desertx.webp",
         logo: "/Logo/logo_ducati.png"
     },
@@ -380,6 +403,7 @@ const products = [
         kilometers: 25000,
         price: 25900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_xdiavel.png",
         logo: "/Logo/logo_ducati.png"
     },
@@ -396,6 +420,7 @@ const products = [
         kilometers: 55000,
         price: 20900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_fat_boy.jpeg",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -412,6 +437,7 @@ const products = [
         kilometers: 0,
         price: 32900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_pan_america.png",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -428,6 +454,7 @@ const products = [
         kilometers: 0,
         price: 49900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_r1200_gs_adventure.jpeg",
         logo: "/Logo/logo_bmw.png"
     },
@@ -444,6 +471,7 @@ const products = [
         kilometers: 15000,
         price: 29900,
         rating: 1,
+        stock: 1,
         image: "/Product/img_s1000_rr.avif",
         logo: "/Logo/logo_bmw.png"
     },
@@ -460,6 +488,7 @@ const products = [
         kilometers: 0,
         price: 19900,
         rating: 3,
+        stock: 1,
         image: "/Product/img_ce_04.webp",
         logo: "/Logo/logo_bmw.png"
     },
@@ -476,6 +505,7 @@ const products = [
         kilometers: 0,
         price: 17900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_fc_450.png",
         logo: "/Logo/logo_husqvarna.png"
     },
@@ -492,6 +522,7 @@ const products = [
         kilometers: 15000,
         price: 12900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_vitpilen_701.jpeg",
         logo: "/Logo/logo_husqvarna.png"
     },
@@ -508,6 +539,7 @@ const products = [
         kilometers: 12500,
         price: 18900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_z900_rs.png",
         logo: "/Logo/logo_kawasaki.svg"
     },
@@ -524,6 +556,7 @@ const products = [
         kilometers: 1500,
         price: 12900,
         rating: 3,
+        stock: 1,
         image: "/Product/img_kx450.png",
         logo: "/Logo/logo_kawasaki.svg"
     },
@@ -540,6 +573,7 @@ const products = [
         kilometers: 1500,
         price: 10900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_zx6r.jpeg",
         logo: "/Logo/logo_kawasaki.svg"
     },
@@ -556,6 +590,7 @@ const products = [
         kilometers: 0,
         price: 40900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_1290_super_adventure_r.jpeg",
         logo: "/Logo/logo_ktm.png"
     },
@@ -572,6 +607,7 @@ const products = [
         kilometers: 0,
         price: 30900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_1290_super_duke_r.png",
         logo: "/Logo/logo_ktm.png"
     },
@@ -588,6 +624,7 @@ const products = [
         kilometers: 0,
         price: 50900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_challenger_elite.png",
         logo: "/Logo/logo_indian.svg"
     },
@@ -604,6 +641,7 @@ const products = [
         kilometers: 0,
         price: 35900,
         rating: 3,
+        stock: 1,
         image: "/Product/img_ftr_rally.jpeg",
         logo: "/Logo/logo_indian.svg"
     },
@@ -620,6 +658,7 @@ const products = [
         kilometers: 16500,
         price: 35900,
         rating: 3,
+        stock: 1,
         image: "/Product/img_rocket_3_gt.png",
         logo: "/Logo/logo_triumph.svg"
     },
@@ -636,6 +675,7 @@ const products = [
         kilometers: 0,
         price: 29900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_tiger_1200_rally_pro.avif",
         logo: "/Logo/logo_triumph.svg"
     },
@@ -652,6 +692,7 @@ const products = [
         kilometers: 900,
         price: 29900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_thruxton_rs.avif",
         logo: "/Logo/logo_triumph.svg"
     },
@@ -668,6 +709,7 @@ const products = [
         kilometers: 40000,
         price: 12900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_monster_1100_evo.webp",
         logo: "/Logo/logo_ducati.png"
     },
@@ -684,6 +726,7 @@ const products = [
         kilometers: 8000,
         price: 22900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_scout.jpeg",
         logo: "/Logo/logo_indian.svg"
     },
@@ -700,6 +743,7 @@ const products = [
         kilometers: 0,
         price: 10900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_sx_125.png",
         logo: "/Logo/logo_ktm.png"
     },
@@ -716,6 +760,7 @@ const products = [
         kilometers: 0,
         price: 6900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_rc_200.png",
         logo: "/Logo/logo_ktm.png"
     },
@@ -732,6 +777,7 @@ const products = [
         kilometers: 8500,
         price: 26900,
         rating: 3,
+        stock: 1,
         image: "/Product/img_bonneville_t120.webp",
         logo: "/Logo/logo_triumph.svg"
     },
@@ -748,6 +794,7 @@ const products = [
         kilometers: 50000,
         price: 34900,
         rating: 1,
+        stock: 1,
         image: "/Product/img_road_king_classic.jpeg",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -764,6 +811,7 @@ const products = [
         kilometers: 7500,
         price: 20900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_sportster_seventy_two.jpeg",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -780,6 +828,7 @@ const products = [
         kilometers: 7500,
         price: 26900,
         rating: 1,
+        stock: 1,
         image: "/Product/img_crf1000_africa_twin.jpeg",
         logo: "/Logo/logo_honda.svg"
     },
@@ -796,6 +845,7 @@ const products = [
         kilometers: 0,
         price: 16900,
         rating: 3,
+        stock: 1,
         image: "/Product/img_crf450.webp",
         logo: "/Logo/logo_honda.svg"
     },
@@ -812,6 +862,7 @@ const products = [
         kilometers: 5500,
         price: 17900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_cb650r.avif",
         logo: "/Logo/logo_honda.svg"
     },
@@ -828,6 +879,7 @@ const products = [
         kilometers: 50000,
         price: 7500,
         rating: 4,
+        stock: 1,
         image: "/Product/img_cbx750.webp",
         logo: "/Logo/logo_honda.svg"
     },
@@ -844,6 +896,7 @@ const products = [
         kilometers: 0,
         price: 26900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_cbr1000rr.avif",
         logo: "/Logo/logo_honda.svg"
     },
@@ -860,6 +913,7 @@ const products = [
         kilometers: 0,
         price: 68900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_cvo_street_glide.png",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -876,6 +930,7 @@ const products = [
         kilometers: 42500,
         price: 14900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_sportster_iron_883.jpeg",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -892,6 +947,7 @@ const products = [
         kilometers: 20500,
         price: 34900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_ultra_classic.png",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -908,6 +964,7 @@ const products = [
         kilometers: 25000,
         price: 18900,
         rating: 5,
+        stock: 1,
         image: "/Product/img_xl1200_sportster_roadster.jpeg",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -924,6 +981,7 @@ const products = [
         kilometers: 5000,
         price: 26900,
         rating: 2,
+        stock: 1,
         image: "/Product/img_gold_wing.avif",
         logo: "/Logo/logo_honda.svg"
     },
@@ -940,6 +998,7 @@ const products = [
         kilometers: 0,
         price: 34900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_r_ninet.avif",
         logo: "/Logo/logo_bmw.png"
     },
@@ -956,6 +1015,7 @@ const products = [
         kilometers: 0,
         price: 22900,
         rating: 3,
+        stock: 1,
         image: "/Product/img_softail_street_bob.png",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -972,6 +1032,7 @@ const products = [
         kilometers: 0,
         price: 20900,
         rating: 4,
+        stock: 1,
         image: "/Product/img_dyna_fat_bob.jpeg",
         logo: "/Logo/logo_harley_davidson.svg"
     },
@@ -988,6 +1049,7 @@ const products = [
         kilometers: 0,
         price: 21900,
         rating: 3,
+        stock: 1,
         image: "/Product/img_softail_heritage_classic.jpeg",
         logo: "/Logo/logo_harley_davidson.svg"
     }

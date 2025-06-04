@@ -20,7 +20,7 @@ function ItemDetail(props) {
 		<section className="mt-[79px] mb-4 py-8 bg-white md:py-16 bg-white flex-grow antialiased">
 			<div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
 				<div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
-					<div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
+					<div className="shrink-0 max-w-md lg:max-w-lg mx-auto relative">
 						<img className="w-full" src={producto.image} alt="" draggable="false" />
 					</div>
 					<div className="mt-6 sm:mt-8 lg:mt-0">
@@ -37,6 +37,15 @@ function ItemDetail(props) {
 								<p className="text-sm font-medium leading-none text-gray-500">
 									({producto.rating})
 								</p>
+							</div>
+							<div className="mt-2 sm:mt-0">
+								{ producto.stock > 0
+									?	<div className="flex items-center gap-2">
+											<span className="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-semibold text-green-700 ring-1 ring-green-600/20 ring-inset">In Stock</span>
+											<p className="text-sm font-medium leading-none text-gray-500">({producto.stock})</p>
+										</div>
+									: <span className="inline-flex items-center rounded-full bg-red-50 px-2 py-1 text-xs font-semibold text-red-700 ring-1 ring-red-600/10 ring-inset">Out Of Stock</span>
+								}
 							</div>
 						</div>
 						<hr className="my-6 md:my-8 border-gray-200" />
