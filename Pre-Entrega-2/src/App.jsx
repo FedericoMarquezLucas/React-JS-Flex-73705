@@ -6,7 +6,7 @@ import Alpine from 'alpinejs'
 import { Footer, Home, ItemDetail, ItemListContainer, NavBar, NotFound } from './components'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   useEffect(() => {
     window.Alpine = Alpine
