@@ -8,7 +8,7 @@ export const useAppContext = () => useContext(AppContext);
 
 // 2.
 export const ContextProvider = (props) => {
-    const [carrito, setCarrito] = useState([]);
+    const [carrito, setCarrito] = useState([])
 
     const agregarAlCarrito = (producto) => {
         if (carrito.some(el => el.id === producto.id)) {
@@ -17,22 +17,25 @@ export const ContextProvider = (props) => {
                     return {
                         ...element,
                         cantidad: element.cantidad + producto.cantidad,
-                    };
+                    }
                 } else {
-                    return element;
-                };
-            });
-            setCarrito(nuevoCarrito);
-            // console.log(`Producto ${el.id} agregado al carrito!`)
+                    return element
+                }
+            })
+            setCarrito(nuevoCarrito)
         } else {
-            setCarrito([...carrito, producto]);
-            console.log(`Producto ${producto.brand} ${producto.model} agregado al carrito!`)
-        };
-    };
+            setCarrito([...carrito, producto])
+        }
+    }
+
+		const removerDelCarrito = (id) => {
+			setCarrito(carrito.filter((producto) => producto.id !== id))
+			console.log(`Producto ID: ${id} removido del Carrito!`)
+		}
 
     const limpiarCarrito = () => {
-        setCarrito([]);
-    };
+        setCarrito([])
+    }
 
     // Cantidad de productos
     // carrito.reduce((acc,value) => acc += value.cantidad, 0)
@@ -42,7 +45,7 @@ export const ContextProvider = (props) => {
 
     // 3.
     return (
-        <AppContext.Provider value={{ carrito, agregarAlCarrito, limpiarCarrito }}>
+        <AppContext.Provider value={{ carrito, agregarAlCarrito, removerDelCarrito, limpiarCarrito }}>
             {props.children}
         </AppContext.Provider>
     );

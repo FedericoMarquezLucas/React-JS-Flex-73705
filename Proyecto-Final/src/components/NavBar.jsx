@@ -52,7 +52,7 @@ function NavBar() {
             </div>
           </div>
           <div className="flex flex-row items-center gap-x-3.5" x-data="{ openWishlist: false, openCartSlideOver: false }">
-            <WishlistWidget />
+            {/* <WishlistWidget /> */}
             <CartWidget />
           </div>
         </nav>
