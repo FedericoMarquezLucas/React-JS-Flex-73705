@@ -2,6 +2,7 @@ import ItemCell from './ItemCell.jsx'
 import getProducts from '../services/mockService.js'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { useAppContext } from '../context/context.jsx'
 
 function ItemListContainer(props) {
 
@@ -9,6 +10,8 @@ function ItemListContainer(props) {
   const [products, setProducts] = useState([])
 
   const { brand } = useParams()
+
+  const { carrito, limpiarCarrito } = useAppContext()
 
   const filterByBrand = (arrayProducts, category) => {
     if (brand) {

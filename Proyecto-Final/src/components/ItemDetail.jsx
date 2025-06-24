@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import getProducts from '../services/mockService.js'
 import RatingStars from './RatingStars.jsx'
 
-function ItemDetail(props) {
+function ItemDetail() {
 
 	const { id } = useParams()
 	const [producto, setProducto] = useState({})
