@@ -8,15 +8,15 @@ function CartItemCell({ id, brand, model, price, image, cantidad }) {
   return (
     <>
 			<div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm md:p-6">
-					<div className="space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0">
-							<Link
+					<div className="space-y-4 md:flex md:items-center md:justify-between md:gap-4 md:space-y-0">
+							{/* <Link
 								to={`/bikes/bike/${id}`}
 								className="shrink-0 md:order-1"
 							>
 								<img className="h-20 w-20" src={image} alt="" />
-							</Link>
+							</Link> */}
 							<label htmlFor="counter-input" className="sr-only">Choose quantity:</label>
-							<div className="flex items-center justify-between md:order-3 md:justify-end">
+							<div className="flex flex-1 items-center justify-between gap-x-6 md:order-3 md:justify-end">
 									<div className="flex items-center">
 											<button
                         type="button"
@@ -52,8 +52,9 @@ function CartItemCell({ id, brand, model, price, image, cantidad }) {
 											</button>
 									</div>
 									<div className="text-end md:order-4 md:w-32">
-											<p className="text-base font-bold text-gray-900">
+											<p className="flex flex-row items-center gap-x-1.5 text-base font-bold text-gray-900">
 												{price.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).replace('$', '$ ')}
+												<span className="text-xs text-gray-500 font-normal">each</span>
 											</p>
 									</div>
 							</div>
