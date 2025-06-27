@@ -38,7 +38,7 @@ function ItemCell({ id, brand, model, year, displacement, displacementUnit, kilo
 						disabled={stock <= 0}
 						title="Add To Cart"
 						onClick={() => agregarAlCarrito({id, brand, model, price, cantidad: 1})}
-						className="rounded-full bg-purple-700 px-2.5 py-1 text-xs font-semibold text-white shadow-sm hover:bg-purple-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-700 disabled:bg-gray-100 disabled:cursor-not-allowed"
+						className={`rounded-full bg-purple-700 px-2.5 py-1 text-xs font-semibold text-white shadow-sm hover:bg-purple-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-700 ${stock <= 0 ? 'hidden' : ''}`}
 					>
 						Add To Cart
 					</button>

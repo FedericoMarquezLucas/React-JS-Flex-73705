@@ -4,19 +4,27 @@ import CartItemCell from './CartItemCell.jsx'
 
 function Cart() {
 
-  const { carrito } = useAppContext()
+  const { carrito, limpiarCarrito } = useAppContext()
 
   return (
     <>
 		<section className="bg-white py-8 antialiased mt-[79px] md:py-16">
 			<div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
-				<div className="flex flex-row items-center space-x-2.5">
-					<h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">Shopping Cart</h2>
-					<p className="text-gray-900">
-						({carrito.reduce((acc, value) => acc + value.cantidad, 0)}
-						{' '}
-						{carrito.reduce((acc, value) => acc + value.cantidad, 0) === 1 ? 'item' : 'items'})
-					</p>
+				<div className="flex flex-row justify-between items-center">
+					<div className="flex flex-row items-center space-x-2.5">
+						<h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">Shopping Cart</h2>
+						<p className="text-gray-900">
+							({carrito.reduce((acc, value) => acc + value.cantidad, 0)}
+							{' '}
+							{carrito.reduce((acc, value) => acc + value.cantidad, 0) === 1 ? 'item' : 'items'})
+						</p>
+					</div>
+					<button
+						onClick={() => limpiarCarrito()}
+						className="rounded-full border border-transparent py-2 px-4 text-center text-sm font-medium transition-all text-gray-600 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+					>
+						Empty Cart
+					</button>
 				</div>
 				<div className="mt-6 sm:mt-8 md:gap-6 lg:flex lg:items-start xl:gap-8">
 
