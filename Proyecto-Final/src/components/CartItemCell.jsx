@@ -3,7 +3,7 @@ import { useAppContext } from '../context/context.jsx'
 
 function CartItemCell({ id, brand, model, price, image, cantidad }) {
 
-	const { decrementQuantity, aumentarCantidad, removerDelCarrito } = useAppContext()
+	const { decrementQuantity, incrementQuantity, removerDelCarrito } = useAppContext()
 
   return (
     <>
@@ -42,7 +42,7 @@ function CartItemCell({ id, brand, model, price, image, cantidad }) {
 											<button
                         type="button"
                         id="increment-button"
-                        onClick={() => aumentarCantidad(id)}
+                        onClick={() => incrementQuantity(id)}
                         data-input-counter-increment="counter-input"
                         className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-100"
                       >

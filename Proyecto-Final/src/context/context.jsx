@@ -38,7 +38,7 @@ export const ContextProvider = (props) => {
 			)
   	}
 		
-		const aumentarCantidad = (id) => {
+		const incrementQuantity = (id) => {
 			setCarrito((carrito) =>
 				carrito.map((element) =>
 					element.id === id
@@ -65,7 +65,7 @@ export const ContextProvider = (props) => {
 
     // 3.
     return (
-        <AppContext.Provider value={{ carrito, addToCart, decrementQuantity, aumentarCantidad, removerDelCarrito, limpiarCarrito }}>
+        <AppContext.Provider value={{ carrito, addToCart, decrementQuantity, incrementQuantity, removerDelCarrito, limpiarCarrito }}>
             {props.children}
         </AppContext.Provider>
     );
