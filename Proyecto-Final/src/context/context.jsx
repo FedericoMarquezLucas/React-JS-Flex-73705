@@ -28,6 +28,26 @@ export const ContextProvider = (props) => {
         }
     }
 
+		const reducirCantidad = (id) => {
+			setCarrito((prevCarrito) =>
+				prevCarrito.map((element) =>
+					element.id === id
+						? { ...element, cantidad: Math.max(0, element.cantidad - 1) }
+						: element
+				)
+			)
+  	}
+		
+		const aumentarCantidad = (id) => {
+			setCarrito((carrito) =>
+				carrito.map((element) =>
+					element.id === id
+						? { ...element, cantidad: element.cantidad + 1 }
+						: element
+				)
+			)
+		}
+
 		const removerDelCarrito = (id) => {
 			setCarrito(carrito.filter((producto) => producto.id !== id))
 			console.log(`Producto ID: ${id} removido del Carrito!`)
@@ -45,7 +65,7 @@ export const ContextProvider = (props) => {
 
     // 3.
     return (
-        <AppContext.Provider value={{ carrito, agregarAlCarrito, removerDelCarrito, limpiarCarrito }}>
+        <AppContext.Provider value={{ carrito, agregarAlCarrito, reducirCantidad, aumentarCantidad, removerDelCarrito, limpiarCarrito }}>
             {props.children}
         </AppContext.Provider>
     );
