@@ -8,11 +8,11 @@ export const useAppContext = () => useContext(AppContext);
 
 // 2.
 export const ContextProvider = (props) => {
-    const [carrito, setCarrito] = useState([])
+    const [cart, setCart] = useState([])
 
     const addToCart = (producto) => {
-			if (carrito.some(el => el.id === producto.id)) {
-				const nuevoCarrito = carrito.map(element => {
+			if (cart.some(el => el.id === producto.id)) {
+				const newCart = cart.map(element => {
 					if(element.id === producto.id){
 						return {
 							...element,
@@ -22,15 +22,15 @@ export const ContextProvider = (props) => {
 						return element
 					}
 				})
-					setCarrito(nuevoCarrito)
+					setCart(newCart)
 			} else {
-				setCarrito([...carrito, producto])
+				setCart([...cart, producto])
 			}
     }
 
 		const decrementQuantity = (id) => {
-			setCarrito((prevCarrito) =>
-				prevCarrito.map((element) =>
+			setCart((prevCart) =>
+				prevCart.map((element) =>
 					element.id === id
 						? { ...element, cantidad: Math.max(0, element.cantidad - 1) }
 						: element
@@ -39,8 +39,8 @@ export const ContextProvider = (props) => {
   	}
 		
 		const incrementQuantity = (id) => {
-			setCarrito((carrito) =>
-				carrito.map((element) =>
+			setCart((cart) =>
+				cart.map((element) =>
 					element.id === id
 						? { ...element, cantidad: element.cantidad + 1 }
 						: element
@@ -49,23 +49,22 @@ export const ContextProvider = (props) => {
 		}
 
 		const removeFromCart = (id) => {
-			setCarrito(carrito.filter((producto) => producto.id !== id))
-			console.log(`Producto ID: ${id} removido del Carrito!`)
+			setCart(cart.filter((producto) => producto.id !== id))
 		}
 
     const emptyCart = () => {
-    	setCarrito([])
+    	setCart([])
     }
 
     // Cantidad de productos
-    // carrito.reduce((acc,value) => acc += value.cantidad, 0)
+    // cart.reduce((acc,value) => acc += value.cantidad, 0)
     
     // Precio final
-    // carrito.reduce((acc,value) => acc += (value.cantidad * value.price), 0)
+    // cart.reduce((acc,value) => acc += (value.cantidad * value.price), 0)
 
     // 3.
     return (
-        <AppContext.Provider value={{ carrito, addToCart, decrementQuantity, incrementQuantity, removeFromCart, emptyCart }}>
+        <AppContext.Provider value={{ cart, addToCart, decrementQuantity, incrementQuantity, removeFromCart, emptyCart }}>
             {props.children}
         </AppContext.Provider>
     );

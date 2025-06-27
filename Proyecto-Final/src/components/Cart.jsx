@@ -4,7 +4,7 @@ import CartItemCell from './CartItemCell.jsx'
 
 function Cart() {
 
-  const { carrito, emptyCart } = useAppContext()
+  const { cart, emptyCart } = useAppContext()
 
   return (
     <>
@@ -14,9 +14,9 @@ function Cart() {
 					<div className="flex flex-row items-center space-x-2.5">
 						<h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">Shopping Cart</h2>
 						<p className="text-gray-900">
-							({carrito.reduce((acc, value) => acc + value.cantidad, 0)}
+							({cart.reduce((acc, value) => acc + value.cantidad, 0)}
 							{' '}
-							{carrito.reduce((acc, value) => acc + value.cantidad, 0) === 1 ? 'item' : 'items'})
+							{cart.reduce((acc, value) => acc + value.cantidad, 0) === 1 ? 'item' : 'items'})
 						</p>
 					</div>
 					<button
@@ -32,9 +32,9 @@ function Cart() {
 					<div className="mx-auto w-full flex-none lg:max-w-2xl xl:max-w-4xl">
 						<div className="space-y-6">
 							{
-								carrito.length > 0
+								cart.length > 0
 									?
-										carrito.map(item => <CartItemCell key={item.id} {...item}/>)
+										cart.map(item => <CartItemCell key={item.id} {...item}/>)
 									:
 									<div className="flex items-center justify-center gap-2 bg-red-50 p-4 rounded-lg text-sm text-red-700 text-center font-medium">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
@@ -56,7 +56,7 @@ function Cart() {
 									<dl className="flex items-center justify-between gap-4">
 										<dt className="text-base font-normal text-gray-600">Original price</dt>
 										<dd className="text-base font-medium text-gray-900">
-											{carrito
+											{cart
 												.reduce((acc, value) => acc + value.cantidad * value.price, 0)
 												.toLocaleString('en-US', {
 													style: 'currency',
@@ -76,7 +76,7 @@ function Cart() {
 								<dl className="flex items-center justify-between gap-4 border-t border-gray-200 pt-2">
 									<dt className="text-base font-bold text-gray-900">Total</dt>
 									<dd className="text-base font-bold text-gray-900">
-										{carrito
+										{cart
 											.reduce((acc, value) => acc + value.cantidad * value.price, 0)
 											.toLocaleString('en-US', {
 												style: 'currency',

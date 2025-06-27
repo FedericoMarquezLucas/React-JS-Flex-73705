@@ -11,7 +11,7 @@ function ItemListContainer(props) {
 
   const { brand } = useParams()
 
-  const { carrito, emptyCart } = useAppContext()
+  const { cart, emptyCart } = useAppContext()
 
   const filterByBrand = (arrayProducts, category) => {
     if (brand) {
