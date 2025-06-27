@@ -4,7 +4,7 @@ import RatingStars from './RatingStars.jsx'
 
 function ItemCell({ id, brand, model, year, displacement, displacementUnit, kilometers, price, rating, image, stock }) {
 
-	const { agregarAlCarrito } = useAppContext()
+	const { addToCart } = useAppContext()
 
   return (
 		<div className="group">
@@ -37,7 +37,7 @@ function ItemCell({ id, brand, model, year, displacement, displacementUnit, kilo
 						role="button"
 						disabled={stock <= 0}
 						title="Add To Cart"
-						onClick={() => agregarAlCarrito({id, brand, model, price, cantidad: 1})}
+						onClick={() => addToCart({id, brand, model, price, cantidad: 1})}
 						className={`rounded-full bg-purple-700 px-2.5 py-1 text-xs font-semibold text-white shadow-sm hover:bg-purple-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-700 ${stock <= 0 ? 'hidden' : ''}`}
 					>
 						Add To Cart
