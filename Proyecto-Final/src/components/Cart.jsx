@@ -14,9 +14,9 @@ function Cart() {
 					<div className="flex flex-row items-center space-x-2.5">
 						<h2 className="text-xl font-semibold text-gray-900 sm:text-2xl">Shopping Cart</h2>
 						<p className="text-gray-900">
-							({cart.reduce((acc, value) => acc + value.cantidad, 0)}
+							({cart.reduce((acc, value) => acc + value.quantity, 0)}
 							{' '}
-							{cart.reduce((acc, value) => acc + value.cantidad, 0) === 1 ? 'item' : 'items'})
+							{cart.reduce((acc, value) => acc + value.quantity, 0) === 1 ? 'item' : 'items'})
 						</p>
 					</div>
 					<button
@@ -57,7 +57,7 @@ function Cart() {
 										<dt className="text-base font-normal text-gray-600">Original price</dt>
 										<dd className="text-base font-medium text-gray-900">
 											{cart
-												.reduce((acc, value) => acc + value.cantidad * value.price, 0)
+												.reduce((acc, value) => acc + value.quantity * value.price, 0)
 												.toLocaleString('en-US', {
 													style: 'currency',
 													currency: 'USD',
@@ -77,7 +77,7 @@ function Cart() {
 									<dt className="text-base font-bold text-gray-900">Total</dt>
 									<dd className="text-base font-bold text-gray-900">
 										{cart
-											.reduce((acc, value) => acc + value.cantidad * value.price, 0)
+											.reduce((acc, value) => acc + value.quantity * value.price, 0)
 											.toLocaleString('en-US', {
 												style: 'currency',
 												currency: 'USD',

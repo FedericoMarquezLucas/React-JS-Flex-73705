@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useAppContext } from '../context/context.jsx'
 
-function CartItemCell({ id, brand, model, price, image, cantidad }) {
+function CartItemCell({ id, brand, model, price, image, quantity }) {
 
 	const { decrementQuantity, incrementQuantity, removeFromCart } = useAppContext()
 
@@ -21,10 +21,10 @@ function CartItemCell({ id, brand, model, price, image, cantidad }) {
 											<button
                         type="button"
                         id="decrement-button"
-                        disabled={cantidad <= 0}
+                        disabled={quantity <= 0}
                         onClick={() => decrementQuantity(id)}
                         data-input-counter-decrement="counter-input"
-                        className={`inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-100 ${cantidad <= 0 ? 'opacity-35 cursor-not-allowed' : 'hover:bg-gray-200'}`}
+                        className={`inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-md border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-100 ${quantity <= 0 ? 'opacity-35 cursor-not-allowed' : 'hover:bg-gray-200'}`}
                       >
                         <svg className="h-2.5 w-2.5 text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
                           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h16" />
@@ -36,7 +36,7 @@ function CartItemCell({ id, brand, model, price, image, cantidad }) {
                         type="text"
                         id="counter-input"
                         data-input-counter
-                        value={cantidad}
+                        value={quantity}
                         className="w-10 shrink-0 border-0 bg-transparent text-center text-sm font-medium text-gray-900 focus:outline-none focus:ring-0"
                       />
 											<button
@@ -70,7 +70,7 @@ function CartItemCell({ id, brand, model, price, image, cantidad }) {
 									</p>
 									<p className="text-sm">
 										<span className="font-medium text-gray-900">Qty.</span>
-										<span>{cantidad}</span>
+										<span>{quantity}</span>
 									</p>
 									<div className="flex items-center gap-4">
 											{/* <button type="button" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline">
