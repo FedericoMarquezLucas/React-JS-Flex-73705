@@ -4,7 +4,7 @@ import CartItemCell from './CartItemCell.jsx'
 
 function Cart() {
 
-  const { carrito, limpiarCarrito } = useAppContext()
+  const { carrito, emptyCart } = useAppContext()
 
   return (
     <>
@@ -20,7 +20,7 @@ function Cart() {
 						</p>
 					</div>
 					<button
-						onClick={() => limpiarCarrito()}
+						onClick={() => emptyCart()}
 						className="rounded-full border border-transparent py-2 px-4 text-center text-sm font-medium transition-all text-gray-600 hover:bg-gray-100 focus:bg-gray-100 active:bg-gray-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
 					>
 						Empty Cart

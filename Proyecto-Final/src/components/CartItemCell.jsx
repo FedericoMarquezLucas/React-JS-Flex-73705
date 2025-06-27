@@ -3,7 +3,7 @@ import { useAppContext } from '../context/context.jsx'
 
 function CartItemCell({ id, brand, model, price, image, cantidad }) {
 
-	const { decrementQuantity, incrementQuantity, removerDelCarrito } = useAppContext()
+	const { decrementQuantity, incrementQuantity, removeFromCart } = useAppContext()
 
   return (
     <>
@@ -80,7 +80,7 @@ function CartItemCell({ id, brand, model, price, image, cantidad }) {
 											</button> */}
 											<button
 												type="button"
-												onClick={() => removerDelCarrito(id)}
+												onClick={() => removeFromCart(id)}
 												className="inline-flex items-center text-sm font-medium text-red-600 hover:underline"
 											>
 													<svg className="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
