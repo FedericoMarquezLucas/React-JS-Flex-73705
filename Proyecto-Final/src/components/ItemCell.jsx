@@ -32,7 +32,6 @@ function ItemCell({ id, brand, model, year, displacement, displacementUnit, kilo
 					{price.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).replace('$', '$ ')}
 				</p>
 				<div className="flex items-center gap-3.5">
-					{/* <button type="button" className="text-xs hover:underline font-semibold text-gray-500 sm:mt-0 sm:w-auto" title="Add to Wishlist">Add to Wishlist</button> */}
 					<button
 						role="button"
 						disabled={stock <= 0}

@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import CartWidget from './CartWidget.jsx'
-import WishlistWidget from './WishlistWidget.jsx'
 
 const baseClasses = 'text-sm hover:underline';
 const activeClasses = 'text-purple-700 font-semibold underline';
@@ -51,8 +50,7 @@ function NavBar() {
               <NavLink to="/" className='text-sm text-gray-900 font-normal'>FAQ</NavLink> */}
             </div>
           </div>
-          <div className="flex flex-row items-center gap-x-3.5" x-data="{ openWishlist: false, openCartSlideOver: false }">
-            {/* <WishlistWidget /> */}
+          <div className="flex flex-row items-center gap-x-3.5" x-data="{ openCartSlideOver: false }">
             <CartWidget />
           </div>
         </nav>
