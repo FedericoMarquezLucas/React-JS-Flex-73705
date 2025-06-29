@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Alpine from 'alpinejs'
-import { Footer, Home, ItemDetail, ItemListContainer, NavBar, NotFound, Cart } from './components'
+import { Footer, Home, ItemDetailContainer, ItemListContainer, NavBar, NotFound, Cart } from './components'
 import { ContextProvider } from './context/context';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/bikes" element={<ItemListContainer />} />
           <Route path="/bikes/:brand" element={<ItemListContainer />} />
-          <Route path="/bikes/bike/:id" element={<ItemDetail />} />
+          <Route path="/bikes/bike/:id" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
