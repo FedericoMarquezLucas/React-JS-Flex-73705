@@ -62,6 +62,11 @@ export const ContextProvider = (props) => {
 
     const emptyCart = () => {
     	setCart([])
+			toast.warn('There are no Items in your Cart', {
+				autoClose: 2000,
+				pauseOnHover: false,
+				theme: "colored"
+			});
     }
 
     // CART - TOTAL QUANTITY.
