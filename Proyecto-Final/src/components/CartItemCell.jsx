@@ -81,7 +81,7 @@ function CartItemCell({ id, brand, model, price, image, quantity }) {
 											</button> */}
 											<button
 												type="button"
-												onClick={() => removeFromCart(id)}
+												onClick={() => removeFromCart({id, brand, model})}
 												className="inline-flex items-center text-sm font-medium text-red-600 hover:underline"
 											>
 													<svg className="me-1.5 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

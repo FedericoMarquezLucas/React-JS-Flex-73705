@@ -26,6 +26,7 @@ export const ContextProvider = (props) => {
 			}
 			toast.success(`${product.brand} ${product.model} correctly added to Cart!`, {
 				autoClose: 2000,
+				pauseOnHover: false,
 				theme: "colored"
 			});
     }
@@ -50,8 +51,13 @@ export const ContextProvider = (props) => {
 			)
 		}
 
-		const removeFromCart = (id) => {
-			setCart(cart.filter((producto) => producto.id !== id))
+		const removeFromCart = (product) => {
+			setCart(cart.filter((element) => element.id !== product.id))
+			toast.warn(`${product.brand} ${product.model} removed from Cart`, {
+				autoClose: 2000,
+				pauseOnHover: false,
+				theme: "colored"
+			});
 		}
 
     const emptyCart = () => {
