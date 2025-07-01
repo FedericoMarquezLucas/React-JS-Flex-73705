@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 const AppContext = createContext();
 
@@ -23,6 +24,10 @@ export const ContextProvider = (props) => {
 			} else {
 				setCart([...cart, product])
 			}
+			toast.success(`${product.brand} ${product.model} correctly added to Cart!`, {
+				autoClose: 2000,
+				theme: "colored"
+			});
     }
 
 		const decrementQuantity = (id) => {
@@ -62,6 +67,7 @@ export const ContextProvider = (props) => {
     return (
 			<AppContext.Provider value={{ cart, addToCart, decrementQuantity, incrementQuantity, removeFromCart, emptyCart }}>
 				{props.children}
+				<ToastContainer />
 			</AppContext.Provider>
     );
 };
